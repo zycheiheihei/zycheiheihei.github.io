@@ -11,6 +11,18 @@ author_profile: true
 
 {% include base_path %}
 
+<h3>2023</h3>
+
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.year contains "2023" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h3>2022</h3>
+
+{% for post in site.publications reversed %}
+  {% if post.year contains "2022" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
