@@ -36,11 +36,35 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.venue and page.year %}
+          <p>Published in <i>{{ page.venue }}</i>, {{ page.year }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+
+        {% if page.collection == 'publications' %}
+        <p>
+          {% if page.paperurl %}
+            <a href="{{ page.paperurl }}">[pdf]</a>
+          {% endif %}
+          {% if page.code %}
+            <a href="{{ page.code }}">[code]</a>
+          {% endif %}
+          {% if page.slide %}
+            <a href="{{ page.slide }}">[slide]</a>
+          {% endif %}
+          {% if page.video %}
+            <a href="{{ page.video }}">[video]</a>
+          {% endif %}
+          {% if page.poster %}
+            <a href="{{ page.poster }}">[poster]</a>
+          {% endif %}
+        </p>
+        {% endif %}
+
+        {% if page.excerpt %}<p>{{ page.excerpt }}</p> {% endif %}
+
+        {% if page.picture %}<img src= "{{ page.picture | prepend: '/images/' | prepend: base_path }}" alt="{{ page.picture }}"> {% endif %}
         
              
         {% if page.citation and page.paperurl %}
@@ -48,6 +72,7 @@ layout: default
         {% elsif page.citation %}
           <p>Recommended citation: {{ page.citation }} </p>
         {% endif %}
+
     
         </header>
       {% endunless %}
@@ -64,9 +89,9 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+      <!-- {% if page.share %}{% include social-share.html %}{% endif %} -->
 
-      {% include post_pagination.html %}
+      <!-- {% include post_pagination.html %} -->
     </div>
 
     {% if site.comments.provider and page.comments %}
