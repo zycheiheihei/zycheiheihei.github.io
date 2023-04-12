@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "About Me"
-excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -17,6 +16,7 @@ My research mainly focuses on machine learning, deep learning and their applicat
 * Our paper "Understanding the Robustness of 3D Object Detectors with Bird's-Eye-View Representations in Autonomous Driving'' has been accepted in Computer Vision and Pattern Recognition (CVPR) 2023.
 * Our paper "[To Make Yourself Invisible with Adversarial Semantic Contours](https://www.sciencedirect.com/science/article/pii/S1077314223000395)''([arxiv](https://arxiv.org/abs/2303.00284)) has been accepted in Computer Vision and Image Understanding (CVIU).
 * Our team (Yinpeng Dong, Chang Liu, Wenzhao Xiang, **Yichi Zhang**, Haoxing Ye) won <font color="red">the 1st place</font> in the [Evaluating the Adversarial Robustness of Deep Learning Model](https://www.cvmart.net/race/10346/des) track in 2022 International Algorithm Case Competition (Feburary, 2023).
+
 <!-- * I received Beijing Outstanding Graduates in June, 2022.
 * I received Tsinghua Outstanding Graduates in June, 2022.
 * I received Beijing Merit Student in September, 2021.
