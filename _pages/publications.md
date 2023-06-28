@@ -9,6 +9,8 @@ author_profile: true
   You can also find my articles on <u><a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 
+<red>$\ast$ for equal contribution</red>
+
 {% include base_path %}
 
 <h3>2023</h3>
