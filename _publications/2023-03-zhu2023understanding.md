@@ -9,4 +9,6 @@ authorlist: 'Zijian Zhu$^\ast$, <strong>Yichi Zhang$^\ast$</strong>, Hai Chen, Y
 paperurl: 'https://arxiv.org/pdf/2303.17297.pdf'
 picture: "zhu2023understanding.png"
 year: '2023'
+project: 'https://cvpr2023.thecvf.com/virtual/2023/poster/22414'
+video: 'https://youtu.be/TqoR7gwzTXQ'
 ---
