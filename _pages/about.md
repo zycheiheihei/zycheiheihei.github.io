@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a second-year Ph.D. student in the [Department of Computer Science and Technology](https://www.cs.tsinghua.edu.cn/csen/), [Tsinghua University](https://www.tsinghua.edu.cn/en/), advised by Prof. [Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/) and Pro. [Hang Su](https://www.suhangss.me/). Before that, I received my B.S. degree from the Department of Computer Science and Technology, Tsinghua University, and my secondary B.S. degree from the [Department of Psychology](https://www.psych.tsinghua.edu.cn/xlxxen/), Tsinghua University, in June, 2022. 
+I am a second-year Ph.D. student in the [Department of Computer Science and Technology](https://www.cs.tsinghua.edu.cn/csen/), [Tsinghua University](https://www.tsinghua.edu.cn/en/), advised by Prof. [Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/). Before that, I received my B.S. degree from the Department of Computer Science and Technology, Tsinghua University, and my secondary B.S. degree from the [Department of Psychology](https://www.psych.tsinghua.edu.cn/xlxxen/), Tsinghua University, in June, 2022. 
 
 My research mainly focuses on machine learning, deep learning and their applications in computer vision, etc. Recently, I am interested in the robustness and safety of deep learning models, especially large-scale models.
 
