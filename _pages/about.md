@@ -13,7 +13,7 @@ My research mainly focuses on machine learning, deep learning and their applicat
 
 ## News
 
-* Our paper "Exploring the Transferability of Visual Prompting for Multimodal Large Language Models'' has been accepted in Computer Vision and Pattern Recognition (CVPR) 2024 as <font color="red">Highlight (~top 2.8%)</font>.
+* Our paper "[Exploring the Transferability of Visual Prompting for Multimodal Large Language Models](https://arxiv.org/pdf/2404.11207.pdf)'' has been accepted in Computer Vision and Pattern Recognition (CVPR) 2024 as <font color="red">Highlight (~top 2.8%)</font>.
 * Our paper "[Understanding the Robustness of 3D Object Detectors with Bird's-Eye-View Representations in Autonomous Driving](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_Understanding_the_Robustness_of_3D_Object_Detection_With_Birds-Eye-View_Representations_CVPR_2023_paper.pdf)'' has been accepted in Computer Vision and Pattern Recognition (CVPR) 2023.
 * Our paper "[To Make Yourself Invisible with Adversarial Semantic Contours](https://www.sciencedirect.com/science/article/pii/S1077314223000395)''([arxiv](https://arxiv.org/abs/2303.00284)) has been accepted in Computer Vision and Image Understanding (CVIU).
 * Our team (Yinpeng Dong, Chang Liu, Wenzhao Xiang, **Yichi Zhang**, Haoxing Ye) won <font color="red">the 1st place</font> in the [Evaluating the Adversarial Robustness of Deep Learning Model](https://www.cvmart.net/race/10346/des) track in 2022 International Algorithm Case Competition (Feburary, 2023).
