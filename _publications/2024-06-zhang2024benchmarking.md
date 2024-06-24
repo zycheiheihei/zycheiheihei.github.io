@@ -10,4 +10,5 @@ paperurl: 'https://arxiv.org/pdf/2406.07057'
 year: '2024'
 code: 'https://github.com/thu-ml/MMTrustEval'
 project: 'https://multi-trust.github.io'
+picture: "zhang2024benchmarking.png"
 ---
