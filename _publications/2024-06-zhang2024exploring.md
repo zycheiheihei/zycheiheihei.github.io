@@ -9,4 +9,5 @@ authorlist: 'Yichi Zhang, Yinpeng Dong, Siyuan Zhang, Tianzan Min, Hang Su, Jun 
 paperurl: 'https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Exploring_the_Transferability_of_Visual_Prompting_for_Multimodal_Large_Language_CVPR_2024_paper.pdf'
 year: '2024'
 code: 'https://github.com/zycheiheihei/Transferable-Visual-Prompting'
+picture: 'zhang2024exploring.png'
 ---

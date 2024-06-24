@@ -13,7 +13,7 @@ My research mainly focuses on machine learning, deep learning and their applicat
 
 ## News
 
-* We establish the first comprehensive benchmark on the trustworthiness of Multimodal LLMs (MultiTrust). Find out at <a href="https://multi-trust.github.io">https://multi-trust.github.io</a>!
+* We establish <font color="red">the first comprehensive benchmark</font> on the trustworthiness of Multimodal LLMs (MultiTrust), testing more than 20 modern MLLMs on 32 carefully curated tasks. Find out more at <a href="https://multi-trust.github.io">https://multi-trust.github.io</a>!
 * Our paper "[Exploring the Transferability of Visual Prompting for Multimodal Large Language Models](https://arxiv.org/pdf/2404.11207.pdf)'' has been accepted in Computer Vision and Pattern Recognition (CVPR) 2024 as <font color="red">Highlight (~top 2.8%)</font>.
 * Our paper "[Rethinking Model Ensemble in Transfer-based Adversarial Attacks](https://openreview.net/pdf?id=AcJrSoArlh)'' has been accepted in International Conference on Learning Representations (ICLR) 2024.
 <!-- * Our paper "[Understanding the Robustness of 3D Object Detectors with Bird's-Eye-View Representations in Autonomous Driving](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_Understanding_the_Robustness_of_3D_Object_Detection_With_Birds-Eye-View_Representations_CVPR_2023_paper.pdf)'' has been accepted in Computer Vision and Pattern Recognition (CVPR) 2023.
