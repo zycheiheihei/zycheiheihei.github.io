@@ -10,4 +10,5 @@ paperurl: 'https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Exploring
 year: '2024'
 code: 'https://github.com/zycheiheihei/Transferable-Visual-Prompting'
 picture: 'zhang2024exploring.png'
+award: 'Highlight, ~2.8%'
 ---

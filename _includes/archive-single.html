@@ -14,7 +14,9 @@
 
 
 <li>
-  <a href="{{ base_path }}{{ post.url }}" rel="permalink"> {{title}} </a><br>
+  <a href="{{ base_path }}{{ post.url }}" rel="permalink"> {{title}} </a> {% if post.award %}
+  <font color="red">{{ post.award }}</font>
+  {% endif %}<br>
   {{ post.authorlist }}<br>
   <i>{{ post.venue }}</i>, {{post.year}}<br>
   {% if post.paperurl %}
