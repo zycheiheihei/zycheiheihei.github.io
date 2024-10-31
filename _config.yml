@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yichi Zhang's Homepage"
 title_separator          : "-"
 name                     : &name "Yichi Zhang"
-description              : &description "A third-year PhD student in the department of Computer Science and Technology from Tsinghua University."
+description              : &description "A third-year PhD candidate in the department of Computer Science and Technology from Tsinghua University."
 url                      : https://zycheiheihei.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zycheiheihei/zycheiheihei.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yichi Zhang"
   avatar           : "yichi-zhang.jpg"
-  bio              : "Third-year PhD student <br>Computer Science<br>Tsinghua University"
+  bio              : "Third-year PhD candidate <br>Computer Science<br>Tsinghua University"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
