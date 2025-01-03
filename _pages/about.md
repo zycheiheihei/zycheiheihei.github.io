@@ -9,9 +9,9 @@ redirect_from:
 
 I am a third-year Ph.D. candidate in the [Department of Computer Science and Technology](https://www.cs.tsinghua.edu.cn/csen/), [Tsinghua University](https://www.tsinghua.edu.cn/en/), advised by Prof. [Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/). Before that, I received my B.S. degree from the Department of Computer Science and Technology, Tsinghua University, and my secondary B.S. degree from the [Department of Psychology](https://www.psych.tsinghua.edu.cn/xlxxen/), Tsinghua University, in June, 2022. I work closely with Prof. [Hang Su](http://suhangss.me/) and Prof. [Yinpeng Dong](http://ml.cs.tsinghua.edu.cn/~yinpeng/).
 
-My research mainly focuses on machine learning, deep learning and their applications in computer vision, etc. Recently, I am interested in the robustness, safety and trustworthiness of deep learning models, especially general-purpose large models.
+My research mainly focuses on machine learning, deep learning and their applications in computer vision, etc. Recently, I am interested in the robustness, safety and trustworthiness of deep learning models, especially general-purpose large models. I look forward to collaborating with leading research groups in trustworthy AI and related fields.
 
-<font color="red">I am seeking a visiting PhD student position for Fall 2025 and Spring 2026. I am open to self-funded opportunities and look forward to collaborating with leading research groups in trustworthy AI and related fields.</font>
+<font color="red"><em>I am seeking a visiting PhD student position starting from Fall 2025. I am open to self-funded opportunities.</em></font>
 
 ## News
 
