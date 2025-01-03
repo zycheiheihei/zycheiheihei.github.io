@@ -11,7 +11,7 @@ I am a third-year Ph.D. candidate in the [Department of Computer Science and Tec
 
 My research mainly focuses on machine learning, deep learning and their applications in computer vision, etc. Recently, I am interested in the robustness, safety and trustworthiness of deep learning models, especially general-purpose large models. I look forward to collaborating with leading research groups in trustworthy AI and related fields.
 
-<font color="red"><em>I am seeking a visiting PhD student position starting from Fall 2025. I am open to self-funded opportunities.</em></font>
+<font color="red"><em><strong>I am seeking visiting PhD student positions starting from Fall 2025. I am open to self-funded opportunities.</strong></em></font>
 
 ## News
 
