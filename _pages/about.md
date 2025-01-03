@@ -15,7 +15,7 @@ My research mainly focuses on machine learning, deep learning and their applicat
 
 ## News
 
-* 2024/09 -- Our paper "[MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models](https://arxiv.org/pdf/2406.07057.pdf)'' has been accepted in NeurIPS2024. <br> This is <font color="red">the first comprehensive benchmark</font> on the trustworthiness of Multimodal LLMs, testing more than 20 modern MLLMs on 32 carefully curated tasks. Find out more at <a href="https://multi-trust.github.io">https://multi-trust.github.io</a>!
+* 2024/09 -- Our paper "[MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models](https://arxiv.org/pdf/2406.07057.pdf)'' has been accepted in NeurIPS2024. This is <font color="red">the first comprehensive benchmark</font> on the trustworthiness of Multimodal LLMs, testing more than 20 modern MLLMs on 32 carefully curated tasks. Find out more at <a href="https://multi-trust.github.io">https://multi-trust.github.io</a>!
 * 2024/09 -- Our paper "[PINNacle: A Comprehensive Benchmark of Physics-Informed Neural Networks for Solving PDEs](https://arxiv.org/pdf/2306.08827)'' has been accepted in NeurIPS2024.
 * 2024/03 -- Our paper "[Exploring the Transferability of Visual Prompting for Multimodal Large Language Models](https://arxiv.org/pdf/2404.11207.pdf)'' has been accepted in CVPR2024 as <font color="red">Highlight (~top 2.8%)</font>.
 * 2024/01 -- Our paper "[Rethinking Model Ensemble in Transfer-based Adversarial Attacks](https://openreview.net/pdf?id=AcJrSoArlh)'' has been accepted in ICLR2024.
