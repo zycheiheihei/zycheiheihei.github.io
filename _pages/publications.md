@@ -13,6 +13,14 @@ $\ast$ for equal contribution
 
 {% include base_path %}
 
+<h3>2025</h3>
+
+{% for post in site.publications reversed %}
+  {% if post.year contains "2025" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
 <h3>2024</h3>
 
 {% for post in site.publications reversed %}
