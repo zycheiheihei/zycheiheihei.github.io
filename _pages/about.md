@@ -23,6 +23,7 @@ My research mainly focuses on machine learning, deep learning and their applicat
 * 2023/03 -- Our paper "[To Make Yourself Invisible with Adversarial Semantic Contours](https://www.sciencedirect.com/science/article/pii/S1077314223000395)''([arxiv](https://arxiv.org/abs/2303.00284)) has been accepted in Computer Vision and Image Understanding (CVIU).
 * 2022/12 -- Our team (Yinpeng Dong, Chang Liu, Wenzhao Xiang, **Yichi Zhang**, Haoxing Ye) won <font color="red">the 1st place</font> in the [Evaluating the Adversarial Robustness of Deep Learning Model](https://www.cvmart.net/race/10346/des) track in 2022 International Algorithm Case Competition.
 * 2022/06 -- I received Beijing Outstanding Graduates (Only 4 students in the department of CS).
+
 <!-- * I received Tsinghua Outstanding Graduates in June, 2022.
 * I received Beijing Merit Student in September, 2021.
 * Our team (Xiao Yang, **Yichi Zhang**, Shilong Liu) won <font color="red">the 2nd place (2/1599)</font> in the CVPR 2021 Security AI Challenger [Unrestricted Adversarial Attacks on ImageNet](https://tianchi.aliyun.com/competition/entrance/531853/introduction) (June, 2021).
