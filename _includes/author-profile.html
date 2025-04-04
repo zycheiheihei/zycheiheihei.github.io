@@ -4,15 +4,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<style>
-  .selector {
-      cursor: pointer;
-      color: #0077cc;
-      text-decoration: underline;
-      font-family: sans-serif;
-      margin: 0 5px;
-    }
-</style>
+
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -25,7 +17,7 @@
 
   </div>
 
-  <div class="author__avatar" id="author-ghibli" style="display: none;">
+  <div class="author__avatar" id="author-ghibli">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar_ghibli }}" alt="{{ author.name }}">
     {% else %}
@@ -36,7 +28,7 @@
 
   <div>
     <span id="real-btn" class="selector" onclick="setAvatar('real')">[Real]</span>
-    <span id="ghibli-btn" class="selector" onclick="setAvatar('ghibli')">[Ghibli (by 4o)]</span>
+    <span id="ghibli-btn" class="selector" onclick="setAvatar('ghibli')">[Ghibli]</span>
   </div>
 
   <div class="author__content">
@@ -149,6 +141,11 @@
 
 
 <script>
+  window.onload = function () {
+    document.getElementById("avatar-real").style.display = "table-cell";
+    document.getElementById("avatar-ghibli").style.display = "none";
+  };
+
   function setAvatar(type) {
     const real = document.getElementById("avatar-real");
     const ghibli = document.getElementById("avatar-ghibli");
