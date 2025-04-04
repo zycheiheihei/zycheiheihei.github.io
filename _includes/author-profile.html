@@ -27,8 +27,8 @@
   </div>
 
   <div>
-    <span id="real-btn" class="selector" onclick="setAvatar('real')">[Real]</span>
-    <span id="ghibli-btn" class="selector" onclick="setAvatar('ghibli')">[Ghibli]</span>
+    <span id="real-btn" class="selector" onclick="document.getElementById('avatar-real').style.display='table-cell'; document.getElementById('avatar-ghibli').style.display='none';">[Real]</span>
+    <span id="ghibli-btn" class="selector" onclick="document.getElementById('avatar-real').style.display='none'; document.getElementById('avatar-ghibli').style.display='table-cell';">[Ghibli]</span>
   </div>
 
   <div class="author__content">
@@ -139,28 +139,3 @@
   </div>
 </div>
 
-
-<script>
-  window.onload = function () {
-    document.getElementById("avatar-real").style.display = "table-cell";
-    document.getElementById("avatar-ghibli").style.display = "none";
-  };
-
-  function setAvatar(type) {
-    const real = document.getElementById("avatar-real");
-    const ghibli = document.getElementById("avatar-ghibli");
-
-
-    if (type === 'real') {
-      real.style.display = "table-cell";
-      ghibli.style.display = "none";
-      console.log(real.style.display)
-      console.log(ghibli.style.display)
-    } else {
-      real.style.display = "none";
-      ghibli.style.display = "table-cell";
-      console.log(real.style.display)
-      console.log(ghibli.style.display)
-    }
-  }
-</script>
