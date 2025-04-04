@@ -4,6 +4,16 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+<style>
+  .selector {
+      cursor: pointer;
+      color: #0077cc;
+      text-decoration: underline;
+      font-family: sans-serif;
+      margin: 0 5px;
+    }
+</style>
+
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar" id="avatar-real">
@@ -15,7 +25,7 @@
 
   </div>
 
-  <div class="author__avatar" id="author-ghibli">
+  <div class="author__avatar" id="author-ghibli" style="display: none;">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar_ghibli }}" alt="{{ author.name }}">
     {% else %}
@@ -25,7 +35,7 @@
   </div>
 
   <div>
-    <span id="real-btn" class="selector active" onclick="setAvatar('real')">[Real]</span>
+    <span id="real-btn" class="selector" onclick="setAvatar('real')">[Real]</span>
     <span id="ghibli-btn" class="selector" onclick="setAvatar('ghibli')">[Ghibli (by 4o)]</span>
   </div>
 
@@ -143,19 +153,13 @@
     const real = document.getElementById("avatar-real");
     const ghibli = document.getElementById("avatar-ghibli");
 
-    const realBtn = document.getElementById("real-btn");
-    const ghibliBtn = document.getElementById("ghibli-btn");
 
     if (type === 'real') {
-      real.classList.add("visible");
-      ghibli.classList.remove("visible");
-      realBtn.classList.add("active");
-      ghibliBtn.classList.remove("active");
+      real.style.display = "table-cell";
+      ghibli.style.display = "none";
     } else {
-      real.classList.remove("visible");
-      ghibli.classList.add("visible");
-      realBtn.classList.remove("active");
-      ghibliBtn.classList.add("active");
+      real.style.display = "none";
+      ghibli.style.display = "table-cell";
     }
   }
 </script>
