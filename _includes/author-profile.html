@@ -18,7 +18,7 @@
   </div>
 
   <div class="author__avatar" id="author-ghibli">
-    {% if author.avatar contains "://" %}
+    {% if author.avatar_ghibli contains "://" %}
     	<img src="{{ author.avatar_ghibli }}" alt="{{ author.name }}">
     {% else %}
     	<img src="{{ author.avatar_ghibli | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
@@ -154,9 +154,13 @@
     if (type === 'real') {
       real.style.display = "table-cell";
       ghibli.style.display = "none";
+      console.log(real.style.display)
+      console.log(ghibli.style.display)
     } else {
       real.style.display = "none";
       ghibli.style.display = "table-cell";
+      console.log(real.style.display)
+      console.log(ghibli.style.display)
     }
   }
 </script>
