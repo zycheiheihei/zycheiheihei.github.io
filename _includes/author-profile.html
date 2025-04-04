@@ -6,12 +6,27 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
+  <div class="author__avatar" id="avatar-real">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
     {% endif %}
+
+  </div>
+
+  <div class="author__avatar" id="author-ghibli">
+    {% if author.avatar contains "://" %}
+    	<img src="{{ author.avatar_ghibli }}" alt="{{ author.name }}">
+    {% else %}
+    	<img src="{{ author.avatar_ghibli | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    {% endif %}
+
+  </div>
+
+  <div>
+    <span id="real-btn" class="selector active" onclick="setAvatar('real')">[Real]</span>
+    <span id="ghibli-btn" class="selector" onclick="setAvatar('ghibli')">[Ghibli (by 4o)]</span>
   </div>
 
   <div class="author__content">
@@ -121,3 +136,26 @@
     </ul>
   </div>
 </div>
+
+
+<script>
+  function setAvatar(type) {
+    const real = document.getElementById("avatar-real");
+    const ghibli = document.getElementById("avatar-ghibli");
+
+    const realBtn = document.getElementById("real-btn");
+    const ghibliBtn = document.getElementById("ghibli-btn");
+
+    if (type === 'real') {
+      real.classList.add("visible");
+      ghibli.classList.remove("visible");
+      realBtn.classList.add("active");
+      ghibliBtn.classList.remove("active");
+    } else {
+      real.classList.remove("visible");
+      ghibli.classList.add("visible");
+      realBtn.classList.remove("active");
+      ghibliBtn.classList.add("active");
+    }
+  }
+</script>

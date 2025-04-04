@@ -82,6 +82,7 @@ analytics:
 author:
   name             : "Yichi Zhang"
   avatar           : "yichi-zhang.jpg"
+  avatar_ghibli    : "4o-yichi.png"
   bio              : "Third-year PhD candidate <br>Computer Science<br>Tsinghua University"
   location         : "Beijing, China"
   employer         :
