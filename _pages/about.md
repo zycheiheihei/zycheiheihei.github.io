@@ -15,7 +15,7 @@ My research mainly focuses on machine learning, deep learning and their applicat
 
 ## News
 
-* 2025/02 -- We establish <strong>[STAIR](https://arxiv.org/pdf/2502.02384)</strong>, a method to improve safety alignment with introspective reasoning. After three iterations of self-improvement and with test-time search, we boost the goodness score of Llama-3.1-8B-Instruct on StrongReject to 0.94, comparative to Claude3.5-Sonnet !
+* 2025/05 -- <strong>[STAIR](https://arxiv.org/pdf/2502.02384)</strong> has been accepted to ICML 2025 as a <font color="red">spotlight</font> paper! This is a method to improve safety alignment with introspective reasoning. After three iterations of self-improvement and with test-time search, we boost the goodness score of Llama-3.1-8B-Instruct on StrongReject to 0.94, comparative to Claude3.5-Sonnet !
 * 2024/09 -- Our paper "[MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models](https://arxiv.org/pdf/2406.07057.pdf)'' has been accepted in NeurIPS2024. This is <font color="red">the first comprehensive benchmark</font> on the trustworthiness of Multimodal LLMs, testing more than 20 modern MLLMs on 32 carefully curated tasks. Find out more at <a href="https://multi-trust.github.io">https://multi-trust.github.io</a>!
 * 2024/09 -- Our paper "[PINNacle: A Comprehensive Benchmark of Physics-Informed Neural Networks for Solving PDEs](https://arxiv.org/pdf/2306.08827)'' has been accepted in NeurIPS2024.
 * 2024/03 -- Our paper "[Exploring the Transferability of Visual Prompting for Multimodal Large Language Models](https://arxiv.org/pdf/2404.11207.pdf)'' has been accepted in CVPR2024 as <font color="red">Highlight (~top 2.8%)</font>.
