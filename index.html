@@ -41,17 +41,27 @@ nav {
 nav ul {
   list-style: none;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: 1.4rem;
+  /* padding-top: 1rem; */
 }
 
-nav li a {
+nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  padding: 0 1rem;
   white-space: nowrap;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #ffd700;
 }
 
 header {
@@ -284,7 +294,6 @@ a:hover {
   width: 100%;
   max-height: 80vh;
   overflow-y: auto;
-  border-bottom: 1px solid #ddd;
   padding: 10px 0;
   z-index: 998;
 }
