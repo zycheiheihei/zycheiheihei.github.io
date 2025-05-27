@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Yichi Zhang</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: clamp(18px, 1.7vh, 48px)
+}
+
+    body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.4rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #ddd;
+  z-index: 999;
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+header {
+  background-image: url('img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 60px 20px;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+  line-height: 1.8rem;
+}
+
+h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.1rem;
+  font-size: 2rem;
+}
+
+.avatar {
+  margin-top: 3rem;
+  width: 20vw;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.me {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.pub-entry {
+  margin-bottom: 1rem;
+}
+
+.pub-title {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.preview-wrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.preview-wrapper.expanded {
+  max-height: 1024px;
+}
+
+.preview-img {
+  width: 100%;
+  height: auto;
+  margin-top: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+  margin-top: 0.8rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #dddddd;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+section::before {
+  content: "";
+  display: block;
+  height: 5rem;
+  margin-top: -5rem;
+  visibility: hidden;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 1.5rem;
+  color: #444;
+  font-size: 1.8rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#news .news-box {
+  max-height: 15rem;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 1rem 1rem;
+  background-color: #fcfcfc;
+}
+
+#news .news-box ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+#news .news-box li {
+  margin-bottom: 0.5rem;
+}
+
+/* --- Responsive Layout --- */
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 20px;
+    padding: 10px 5px;
+  }
+
+  .avatar {
+    width: 30vw;
+    max-width: 120px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .avatar {
+    width: 40vw;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  header {
+    padding: 40px 10px;
+  }
+
+  .social-links a {
+    margin: 0 8px;
+    font-size: 1rem;
+  }
+
+  .preview-img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* Navbar container and toggle */
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+#nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  z-index: 998;
+}
+
+
+  #nav-links.show {
+    display: flex;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="/files/cv.pdf">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!-- Header -->
+  <header>
+    <img id="avatar" class="avatar" src="./img/avatar1.jpg" alt="Avatar" onclick="toggleAvatar()">
+    <h1>Yichi Zhang</h1>
+    <p>PhD Candidate, Department of Computer Science<br>Tsinghua University</p>
+    <p>Email: zyc22[AT]tsinghua[DOT]edu[DOT]cn | tibo_ricky[AT]outlook[DOT]com
+    <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=HzgDakoAAAAJ" target="_blank"><i class="fa-brands fa-google"></i></a>
+        <a href="https://x.com/zhangyi08610230" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/yichi-zhang-5973292bb" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/zycheiheihei" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+  </header>
+
+  <div class="container">
+
+    <p>
+        I am a third-year Ph.D. candidate in the
+        <a href="https://www.cs.tsinghua.edu.cn/csen/" target="_blank">Department of Computer Science and Technology</a>,
+        <a href="https://www.tsinghua.edu.cn/en/" target="_blank">Tsinghua University</a>,
+        advised by Prof.
+        <a href="https://ml.cs.tsinghua.edu.cn/~jun/" target="_blank">Jun Zhu</a>.
+        Before that, I received my B.E. degree from the Department of Computer Science and Technology, Tsinghua University,
+        and my secondary B.S. degree from the
+        <a href="https://www.psych.tsinghua.edu.cn/xlxxen/" target="_blank">Department of Psychology</a>,
+        Tsinghua University, in June, 2022.
+        I work closely with Prof.
+        <a href="http://suhangss.me/" target="_blank">Hang Su</a> and Prof.
+        <a href="https://dongyp13.github.io/" target="_blank">Yinpeng Dong</a>. I am also honored to have visited TML Lab led by Prof. <a href="https://tongliang-liu.github.io/">Tongliang Liu</a>.<br><br>
+      </p>
+      
+      <p>
+        My research mainly focuses on machine learning, deep learning and their applications in computer vision, etc.
+        Recently, I am interested in the robustness, safety and trustworthiness of deep learning models, especially general-purpose large models.
+        I look forward to collaborating with leading research groups in trustworthy AI and related fields.<br><br>
+      </p>
+
+      <p>
+        I am open to opportunities for collaboration and academic exchange in any form. Please feel free to contact me if you are interested.<br><br>
+      </p>
+      
+      
+
+    <!-- News Section -->
+    <section id="news">
+      <h2>News</h2>
+      <div class="news-box">
+        <ul>
+          <li>[2025-05] We are oranizing a Workshop on Safe and Trustworthy Multimodal AI Systems at ICCV 2025! Find out more at <a href="https://safemmai.github.io/">https://safemmai.github.io</a></li>
+          <li>[2025-05] Our paper on safe alignment with introspective reasoning (<a href="https://arxiv.org/pdf/2502.02384">STAIR</a>) is accepted as a <strong>Spotlight</strong> at ICML 2025! <br>This work pioneers improving safety alignment with introspective reasoning. After three iterations of self-improvement and with test-time search, we boost the goodness score of Llama-3.1-8B-Instruct on StrongReject to 0.94, comparative to Claude3.5-Sonnet!</li>
+          <li>[2025-04] We release the first version of <a href="https://huggingface.co/RealSafe/">RealSafe-R1</a>, a safety-aligned DeepSeek-R1 family without compromising reasoning capability.</li>
+          <li>[2024-12] We are oranizing a Workshop on Test-time Scaling for Computer Vision at CVPR 2025! Find out more at <a href="https://viscale.github.io/">https://safemmai.github.io</a></li>
+          <li>[2024-09] Two benchmark papers accepted at NeurIPS 2024! <br> <a href="https://arxiv.org/pdf/2406.07057">MultiTrust</a> focuses on the trustworthiness of Multimodal LLMs, testing more than 20 modern MLLMs on 32 carefully curated tasks. Find out more at <a href="https://multi-trust.github.io!">https://multi-trust.github.io</a> </li>
+          <li>[2024-03] One paper accepted as a <strong>Highlight</strong> at CVPR 2024!</li>
+          <li>[2024-01] One paper accepted at ICLR 2024!</li>
+          <li>[2023-03] One paper accepted at CVPR 2023!</li>
+          <li>[2023-03] One paper accepted in CVIU!</li>
+          <li>[2022-12] Our team (Yinpeng Dong, Chang Liu, Wenzhao Xiang, Yichi Zhang, Haoxing Ye) won the <strong>1st place</strong> in the Evaluating the Adversarial Robustness of Deep Learning Model track in 2022 International Algorithm Case Competition.</li>
+          <li>[2022-06] I received Beijing Outstanding Graduates (Only 4 students in the department of CS).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <p>Full publications can be found at <a href="https://scholar.google.com/citations?user=HzgDakoAAAAJ">Google Scholar</a>.<br><br>* for equal contribution<br><br></p>
+      <ul id="pub-list">Loading publications...</ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Ph.D. in Computer Science, Tsinghua University, 2022-2027</li>
+        <li>B.E. in Computer Science, Tsinghua University, 2018-2022</li>
+        <li>B.S. (Secondary) in Psychology, Tsinghua University, 2019-2022</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experiences</h2>
+      <ul>
+        <li>Research Intern, Qwen Team, Alibaba, 2025-Present</li>
+        <li>Visiting Ph.D. Student, TML Lab led by Prof. Tongliang Liu, University of Sydney, Spring, 2025</li>
+        <li>Research Intern, RealAI, 2023-2025</li>
+        <li>Research Intern, Tencent, 2021</li>
+      </ul>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li>Spotlight Poster, ICML 2025</li>
+        <li>Highlight Poster, CVPR 2024</li>
+        <li>1st place in the Evaluating the Adversarial Robustness of Deep Learning Model track in 2022 International Algorithm Case Competition, 2023</li>
+        <li>Outstanding Graduate, Tsinghua University, Beijing, 2022</li>
+        <li>Merit Student, Beijing, 2021</li>
+        <li>2nd place (2/1599) in the CVPR 2021 Security AI Challenger Unrestricted Adversarial Attacks on ImageNet, 2021</li>
+        <li>8th place (8/1814) in the CIKM 2020 Challenge Adversarial Challenge on Object Detection, 2020</li>
+        <li>Comprehensive Excellence Scholarships, Tsinghua University, 2019-2022</li>
+        <li>8th top scorer of science in NCEE (Gaokao), Beijing, 2018</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    // Toggle avatar image
+    const avatarImg = document.getElementById('avatar');
+    const avatars = ['./img/avatar1.jpg', './img/avatar2.png'];
+    let current = 0;
+
+    function toggleAvatar() {
+      current = (current + 1) % avatars.length;
+      avatarImg.src = avatars[current];
+    }
+
+    const myName = "Yichi Zhang"; // replace with your name
+
+async function loadPublications() {
+  try {
+    const response = await fetch('./publications.json');
+    const publications = await response.json();
+    const pubList = document.getElementById('pub-list');
+    pubList.innerHTML = '';
+
+    publications.forEach((pub, index) => {
+      const div = document.createElement('div');
+      div.className = 'pub-entry';
+
+      let links = '';
+      if (pub.paper_link) links += `<a href="${pub.paper_link}" target="_blank">[Paper]</a> `;
+      if (pub.code_link) links += `<a href="${pub.code_link}" target="_blank">[Code]</a>`;
+
+      let awardHTML = pub.award ? `, <span class="award-tag" style="color: red; font-weight: bold">${pub.award}</span>` : '';
+
+      let highlightedAuthors = pub.authors.replace(
+        new RegExp(myName, 'g'),
+        `<span class="me">${myName}</span>`
+      );
+
+      const titleId = `pub-title-${index}`;
+      const imgId = `img-${index}`;
+
+      div.innerHTML = `
+        <p style="margin-bottom: 5px;">
+          <strong class="pub-title" id="${titleId}">${pub.title}</strong> ${links}
+        </p>
+        <p style="margin-top: 0;">
+          ${highlightedAuthors}<br>
+          <em>${pub.venue}</em>${awardHTML}
+        </p>
+        ${pub.image ? `
+            <div class="preview-wrapper" id="wrap-${index}"><img src="${pub.image}" class="preview-img"></div>` : ''}
+      `;
+
+      pubList.appendChild(div);
+
+      // Toggle preview on title click
+      if (pub.image) {
+        document.getElementById(titleId).addEventListener('click', () => {
+            const wrapper = document.getElementById(`wrap-${index}`);
+            wrapper.classList.toggle('expanded');
+        });
+      }
+    });
+  } catch (error) {
+    document.getElementById('pub-list').innerHTML = '<p>Failed to load publications.</p>';
+  }
+}
+
+    window.onload = loadPublications;
+
+    function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("show");
+  }
+
+  // Hide nav dropdown after clicking a link (on mobile)
+  document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.getElementById("nav-links");
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    document.querySelectorAll('#nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove("show");
+        }
+      });
+    });
+  });
+
+  </script>
+
+</body>
+</html>

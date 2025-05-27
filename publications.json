@@ -1,0 +1,61 @@
+[
+    {
+      "title": "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "authors": "Yichi Zhang∗, Siyuan Zhang∗, Yao Huang, Zeyu Xia, Zhengwei Fang, Xiao Yang, Ranjie Duan, Dong Yan, Yinpeng Dong, Jun Zhu",
+      "venue": "Forty-Second International Conference on Machine Learning (ICML), 2025",
+      "image": "img/zhang2025stair.png",
+      "paper_link": "https://arxiv.org/pdf/2502.02384",
+      "code_link": "https://github.com/thu-ml/STAIR",
+      "award": "Spotlight Paper (~2.6%)"
+    },
+    {
+      "title": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "authors": "Yichi Zhang∗, Yao Huang∗, Yitong Sun, Chang Liu, Zhe Zhao, Zhengwei Fang, Yifan Wang, Huanran Chen, Xiao Yang, Xingxing Wei, Hang Su, Yinpeng Dong, Jun Zhu",
+      "image": "img/zhang2024benchmarking.png",
+      "venue": "The Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS), 2024",
+      "paper_link": "https://arxiv.org/pdf/2406.07057",
+      "code_link": "https://github.com/thu-ml/MMTrustEval"
+    },
+    {
+      "title": "Exploring the Transferability of Visual Prompting for Multimodal Large Language Models ",
+      "authors": "Yichi Zhang, Yinpeng Dong, Siyuan Zhang, Tianzan Min, Hang Su, Jun Zhu",
+      "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024",
+      "image": "img/zhang2024exploring.png",
+      "paper_link": "https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Exploring_the_Transferability_of_Visual_Prompting_for_Multimodal_Large_Language_CVPR_2024_paper.pdf",
+      "code_link": "https://github.com/zycheiheihei/Transferable-Visual-Prompting",
+      "award": "Highlight Paper (~2.8%)"
+    },
+    {
+      "title": "Rethinking Model Ensemble in Transfer-based Adversarial Attacks",
+      "authors": "Huanran Chen, Yichi Zhang, Yinpeng Dong, Xiao Yang, Hang Su, Jun Zhu",
+      "venue": "The Twelfth International Conference on Learning Representations (ICLR), 2024",
+      "paper_link": "https://openreview.net/pdf?id=AcJrSoArlh",
+      "code_link": "https://github.com/huanranchen/AdversarialAttacks"
+    },
+    {
+      "title": "How Robust is Google’s Bard to Adversarial Image Attacks?",
+      "authors": "Yinpeng Dong, Huanran Chen, Jiawei Chen, Zhengwei Fang, Xiao Yang, Yichi Zhang, Yu Tian, Hang Su, Jun Zhu",
+      "venue": "Workshop on robustness of zero/few-shot learning in foundation models (R0-FoMo) in the Thrity-Seventh Annual Conference on Neural Information Processing Systems (NeurIPS), 2023",
+      "image": "img/dong2023robust.png",
+      "paper_link": "https://arxiv.org/pdf/2309.11751.pdf",
+      "code_link": "https://github.com/thu-ml/Attack-Bard",
+      "award": "Adopted by OpenAI for their robustness evaluation"
+    },
+    {
+      "title": "Understanding the Robustness of 3D Object Detectors with Bird’s-Eye-View Representations in Autonomous Driving",
+      "authors": "Zijian Zhu∗, Yichi Zhang∗, Hai Chen, Yinpeng Dong, Shu Zhao, Wenbo Ding, Jiachen Zhong, and Shibao Zheng",
+      "image": "img/zhu2023understanding.png",
+      "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023",
+      "paper_link": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_Understanding_the_Robustness_of_3D_Object_Detection_With_Birds-Eye-View_Representations_CVPR_2023_paper.pdf",
+      "code_link": "https://github.com/zzj403/BEV_Robust"
+    },
+    {
+      "title": "To Make Yourself Invisible with Adversarial Semantic Contours",
+      "authors": "Yichi Zhang*, Zijian Zhu*, Hang Su, Jun Zhu, Shibao Zheng, Yuan He, Hui Xue",
+      "image": "img/zhang2023make.png",
+      "venue": "Computer Vision and Image Understanding (CVIU), Volume 230, 2023",
+      "paper_link": "https://arxiv.org/pdf/2303.00284.pdf",
+      "code_link": "https://github.com/zycheiheihei/Adversarial-Semantic-Contour"
+    }
+  ]
+  
