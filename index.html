@@ -510,6 +510,7 @@ async function loadPublications() {
       let links = '';
       if (pub.paper_link) links += `<a href="${pub.paper_link}" target="_blank">[Paper]</a> `;
       if (pub.code_link) links += `<a href="${pub.code_link}" target="_blank">[Code]</a>`;
+      if (pub.model_link) links += `<a href="${pub.model_link}" target="_blank">[Model]</a>`;
 
       let awardHTML = pub.award ? `, <span class="award-tag" style="color: red; font-weight: bold">${pub.award}</span>` : '';
 
