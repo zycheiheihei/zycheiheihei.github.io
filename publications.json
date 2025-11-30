@@ -1,5 +1,12 @@
 [
     {
+      "title": "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "authors": "Yichi Zhang∗, Siyuan Zhang∗, Yao Huang, Zeyu Xia, Zhengwei Fang, Xiao Yang, Ranjie Duan, Dong Yan, Yinpeng Dong, Jun Zhu",
+      "venue": "Preprint",
+      "image": "img/zhang2025towards.png",
+      "paper_link": "https://arxiv.org/pdf/2509.24393"
+    },
+    {
       "title": "RealSafe-R1: Safety-Aligned DeepSeek-R1 without Compromising Reasoning Capability",
       "authors": "Yichi Zhang, Zihao Zeng, Dongbai Li, Yao Huang, Zhijie Deng, Yinpeng Dong",
       "venue": "R2-FM Workshop at the Forty-Second International Conference on Machine Learning (ICML), 2025",
