@@ -334,7 +334,7 @@ a:hover {
 footer {
   background-color: #f8f8f8;
   border-top: 1px solid #ddd;
-  padding: 20px;
+  padding: 12px 20px;          /* you can tweak this */
   text-align: center;
   font-size: 0.6em;
   color: #555;
@@ -344,6 +344,15 @@ footer {
 .footer-content {
   max-width: 800px;
   margin: 0 auto;
+  display: inline-flex;         /* keeps layout tight around content */
+  align-items: center;          /* vertically centers logo + text */
+  gap: 8px;                    /* space between logo and text */
+}
+
+.footer-logo {
+  height: 40px;                /* control footer height here */
+  width: auto;
+  display: inline-block;
 }
 
   </style>
@@ -480,7 +489,8 @@ footer {
 
   <footer>
     <div class="footer-content">
-      © 2025 Yichi Zhang &middot; Powered by GitHub Pages
+      <img src="img/logo-vec.png" alt="Logo" class="footer-logo">
+    <span>2025 Yichi Zhang &middot; Powered by GitHub Pages</span>
     </div>
   </footer>
 
