@@ -2,7 +2,7 @@
     {
       "title": "GLEAN: Guideline-Grounded Evidence Accumulation for High-Stakes Agent Verification",
       "authors": "Yichi Zhang, Nabeel Seedat, Yinpeng Dong, Peng Cui, Jun Zhu, Mihaela van der Schaar",
-      "venue": "Multiple workshops (e.g., AIWild, Trustworthy AI, VerifAI) at the Fourteenth International Conference on Learning Representations (ICLR), 2026",
+      "venue": "The Forty-Third International Conference on Machine Learning (ICML), 2026",
       "paper_link": "https://arxiv.org/pdf/2603.02798",
       "image": "img/zhang2026glean.png",
       "award": "<br>Best Paper Award at the Agentic AIWild Workshop in ICLR 2026"
