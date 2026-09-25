@@ -1,5 +1,11 @@
 [
     {
+      "title": "RepoMirage: Probing Repository Context Reasoning in Code Agents with Perturbations",
+      "authors": "Hanyu Li*, Yichi Zhang*, Speed Zhu, Hang Su, Jun Zhu, Yinpeng Dong",
+      "venue": "The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS), 2026",
+      "paper_link": "https://openreview.net/pdf?id=I2uNqwM1hm"
+    },
+    {
       "title": "GLEAN: Guideline-Grounded Evidence Accumulation for High-Stakes Agent Verification",
       "authors": "Yichi Zhang, Nabeel Seedat, Yinpeng Dong, Peng Cui, Jun Zhu, Mihaela van der Schaar",
       "venue": "The Forty-Third International Conference on Machine Learning (ICML), 2026",
